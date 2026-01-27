@@ -32,3 +32,395 @@
 2026-01-27 01:25:31 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023","id":1234567890123,"text":"Exploring the applications of AI in Holonomy Groups can revolutionize our understanding of Reimann Manifolds.","user":{"id":9876543210987}}
 2026-01-27 01:25:35 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
 2026-01-27 01:25:35 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-27 01:45:30 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 33939 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-27 01:45:30 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-27 01:45:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-27 01:45:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-27 01:45:31 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-27 01:45:31 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-27 01:45:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-27 01:45:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 420 ms
+2026-01-27 01:45:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-27 01:45:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-27 01:45:31 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 0.918 seconds (process running for 1.197)
+2026-01-27 01:45:31 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Application starting....
+2026-01-27 01:45:31 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - AI Stream Runner init
+2026-01-27 01:45:31 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:45:32 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 404 . 
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:46:01 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:46:01 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 404 . 
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:46:05 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-27 01:46:05 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-27 01:46:52 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 33974 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-27 01:46:52 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-27 01:46:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-27 01:46:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-27 01:46:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-27 01:46:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-27 01:46:52 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-27 01:46:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 404 ms
+2026-01-27 01:46:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-27 01:46:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-27 01:46:52 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 0.89 seconds (process running for 1.179)
+2026-01-27 01:46:52 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Application starting....
+2026-01-27 01:46:52 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - AI Stream Runner init
+2026-01-27 01:46:52 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:46:53 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:47:22 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:47:23 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:47:52 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:47:52 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:48:22 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:48:22 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:48:52 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:48:52 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:49:22 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:49:22 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:49:52 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:49:52 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:50:22 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:50:23 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:50:52 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:50:53 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:51:22 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:51:22 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:51:52 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:51:52 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:52:22 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:52:22 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:52:52 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:52:52 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:53:22 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:53:22 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:53:51 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-27 01:53:51 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-27 01:54:48 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 34530 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-27 01:54:48 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-27 01:54:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-27 01:54:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-27 01:54:48 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-27 01:54:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-27 01:54:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-27 01:54:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 425 ms
+2026-01-27 01:54:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-27 01:54:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-27 01:54:49 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 0.922 seconds (process running for 1.213)
+2026-01-27 01:54:49 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Application starting....
+2026-01-27 01:54:49 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - AI Stream Runner init
+2026-01-27 01:54:49 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:54:50 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used in project kafka-with-ai-485607 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/aiplatform.googleapis.com/overview?project=kafka-with-ai-485607 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+	at com.google.genai.errors.ApiException.throwFromResponse(ApiException.java:94)
+	at com.google.genai.HttpApiResponse.getBody(HttpApiResponse.java:37)
+	at com.google.genai.Models.processResponseForPrivateGenerateContent(Models.java:4909)
+	at com.google.genai.Models.privateGenerateContent(Models.java:4963)
+	at com.google.genai.Models.generateContent(Models.java:6291)
+	at com.google.genai.Models.generateContent(Models.java:6365)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.getPromptResponse(GoogleGenAIService.java:55)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.googlegenai.GoogleGenAIService.generateTweet(GoogleGenAIService.java:44)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 01:55:05 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-27 01:55:05 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-27 01:55:38 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 34537 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-27 01:55:38 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-27 01:55:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-27 01:55:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-27 01:55:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-27 01:55:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-27 01:55:38 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-27 01:55:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 392 ms
+2026-01-27 01:55:39 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-27 01:55:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-27 01:55:39 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 0.889 seconds (process running for 1.192)
+2026-01-27 01:55:39 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Application starting....
+2026-01-27 01:55:39 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - AI Stream Runner init
+2026-01-27 01:55:39 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:55:40 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023","id":1696583545000,"text":"The study of Reimann Manifolds and Holonomy Groups offers insights into the potential of AI. Holonomy on Manifolds","user":{"id":1234567890}}
+
+2026-01-27 01:56:09 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:56:10 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023","id":1696593145,"text":"The study of Holonomy Groups on Reimann Manifolds is crucial for AI development. Holonomy is a fascinating area in math related to Manifolds.","user":{"id":1234567890}}
+
+2026-01-27 01:56:39 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.g.GoogleGenAIService - Generating tweet content with GoogleGenAIService
+2026-01-27 01:56:40 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023", "id":1696623745879, "text":"The study of AI on Reimann Manifolds and Holonomy Groups is crucial for understanding complex data Holonomy.", "user":{"id": 987654321012}}
+
+2026-01-27 01:56:42 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-27 01:56:42 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete

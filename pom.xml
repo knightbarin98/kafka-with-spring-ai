@@ -23,6 +23,7 @@
 		<lombok.version>1.18.38</lombok.version>
 		<httpclient5.version>5.5.2</httpclient5.version>
 		<openai-java.version>4.8.0</openai-java.version>
+		<google-genai.version>1.28.0</google-genai.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -41,6 +42,11 @@
 				<groupId>com.openai</groupId>
 				<artifactId>openai-java</artifactId>
 				<version>${openai-java.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.genai</groupId>
+				<artifactId>google-genai</artifactId>
+				<version>${google-genai.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
