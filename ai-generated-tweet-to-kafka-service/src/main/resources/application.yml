@@ -1,0 +1,8 @@
+ai-generated-tweet-to-kafka-service:
+  streaming-data-keywords:
+    - AI
+    - Holonomy
+    - Holonomy Groups
+    - Manifolds
+    - Reimann Manifolds
+  scheduler-duration-sec: 30

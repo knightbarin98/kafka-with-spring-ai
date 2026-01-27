@@ -1,2 +1,13 @@
-package com.mrbarin.ai.generated.tweet.to.kafka.service.init.impl;public class KafkaStreamInitializer {
+package com.mrbarin.ai.generated.tweet.to.kafka.service.init.impl;
+
+import com.mrbarin.ai.generated.tweet.to.kafka.service.init.StreamInitializer;
+import org.springframework.stereotype.Component;
+
+@Component
+public class KafkaStreamInitializer implements StreamInitializer {
+
+  @Override
+  public boolean init() {
+    return false;
+  }
 }
