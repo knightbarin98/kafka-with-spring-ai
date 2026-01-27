@@ -8,6 +8,6 @@ public class KafkaStreamInitializer implements StreamInitializer {
 
   @Override
   public boolean init() {
-    return false;
+    return true;
   }
 }
