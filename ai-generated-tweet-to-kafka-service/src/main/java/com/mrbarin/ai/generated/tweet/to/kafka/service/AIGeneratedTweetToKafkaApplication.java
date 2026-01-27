@@ -7,12 +7,16 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.TaskScheduler;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 
 @Slf4j
+@EnableScheduling
+@ComponentScan(basePackages = "com.mrbarin")
 @SpringBootApplication
 public class AIGeneratedTweetToKafkaApplication implements CommandLineRunner {
 
