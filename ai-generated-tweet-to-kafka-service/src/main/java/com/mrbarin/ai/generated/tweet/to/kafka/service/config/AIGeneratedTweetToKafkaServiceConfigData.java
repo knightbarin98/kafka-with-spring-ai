@@ -12,4 +12,30 @@ import java.util.List;
 public class AIGeneratedTweetToKafkaServiceConfigData {
   private List<String> streamingDataKeywords;
   private Long schedulerDurationSec;
+  private String prompt;
+  private String keywordsPlaceHolder;
+  private OpenAI openAI;
+
+  @Data
+  public static class OpenAI{
+    private String url;
+    private String apiKey;
+    private String contentType;
+    private String model;
+    private Integer maxCompletionTokens;
+    private Double temperature;
+    private List<Message> messages;
+  }
+
+  @Data
+  public static class Message{
+    private String role;
+    private List<Content> content;
+  }
+
+  @Data
+  public static class Content{
+    private String type;
+    private String text;
+  }
 }

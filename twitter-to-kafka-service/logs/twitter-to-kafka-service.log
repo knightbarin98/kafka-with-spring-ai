@@ -1,16 +1,17 @@
-2026-01-26 20:27:12 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 30047 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
-2026-01-26 20:27:12 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
-2026-01-26 20:27:13 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 0.402 seconds (process running for 0.666)
-2026-01-26 20:27:13 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Application starting....
-2026-01-26 20:27:13 [main] ERROR c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Stream initializer error. No starting the AI Stream Runner
-2026-01-26 20:27:30 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 30057 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
-2026-01-26 20:27:30 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
-2026-01-26 20:27:30 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 0.404 seconds (process running for 0.675)
-2026-01-26 20:27:30 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Application starting....
-2026-01-26 20:27:30 [main] ERROR c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Stream initializer error. No starting the AI Stream Runner
-2026-01-26 20:27:58 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 30074 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
-2026-01-26 20:27:58 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
-2026-01-26 20:27:58 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 0.393 seconds (process running for 0.639)
-2026-01-26 20:27:58 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Application starting....
-2026-01-26 20:27:58 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - AI Stream Runner init
-2026-01-26 20:27:58 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: AI Generated Tweet Content
+2026-01-27 01:09:02 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 33295 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-27 01:09:02 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-27 01:09:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-27 01:09:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-27 01:09:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-27 01:09:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-27 01:09:02 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-27 01:09:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 386 ms
+2026-01-27 01:09:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-27 01:09:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-27 01:09:02 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 0.771 seconds (process running for 1.049)
+2026-01-27 01:09:02 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Application starting....
+2026-01-27 01:09:02 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - AI Stream Runner init
+2026-01-27 01:09:05 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023","id":1234567890,"text":"Exploring the complexities of Reimann Manifolds in the context of AI advancements.","user":{"id":9876543210}}
+2026-01-27 01:09:34 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023","id":1234567890123,"text":"Exploring the concepts of Holonomy and Reimann Manifolds in modern AI applications.","user":{"id":987654321}}
+2026-01-27 01:09:54 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-27 01:09:54 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete

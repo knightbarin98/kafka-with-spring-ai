@@ -1,0 +1,19 @@
+2026-01-26 20:27:12 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 30047 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-26 20:27:12 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-26 20:27:13 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 0.402 seconds (process running for 0.666)
+2026-01-26 20:27:13 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Application starting....
+2026-01-26 20:27:13 [main] ERROR c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Stream initializer error. No starting the AI Stream Runner
+2026-01-26 20:27:30 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 30057 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-26 20:27:30 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-26 20:27:30 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 0.404 seconds (process running for 0.675)
+2026-01-26 20:27:30 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Application starting....
+2026-01-26 20:27:30 [main] ERROR c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Stream initializer error. No starting the AI Stream Runner
+2026-01-26 20:27:58 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 30074 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-26 20:27:58 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-26 20:27:58 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 0.393 seconds (process running for 0.639)
+2026-01-26 20:27:58 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Application starting....
+2026-01-26 20:27:58 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - AI Stream Runner init
+2026-01-26 20:27:58 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: AI Generated Tweet Content
+2026-01-26 20:28:28 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: AI Generated Tweet Content
+2026-01-26 20:28:58 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: AI Generated Tweet Content
+2026-01-26 20:29:28 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: AI Generated Tweet Content
