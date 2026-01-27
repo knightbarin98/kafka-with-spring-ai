@@ -1,0 +1,7 @@
+2026-01-26 18:22:22 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mrbarin.ai.generated.tweet.to.kafka.service.AIGeneratedTweetToKafkaApplicationTest]: AIGeneratedTweetToKafkaApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-26 18:22:22 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mrbarin.ai.generated.tweet.to.kafka.service.AIGeneratedTweetToKafkaApplication for test class com.mrbarin.ai.generated.tweet.to.kafka.service.AIGeneratedTweetToKafkaApplicationTest
+2026-01-26 18:22:22 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplicationTest - Starting AIGeneratedTweetToKafkaApplicationTest using Java 25.0.2 with PID 27247 (started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service)
+2026-01-26 18:22:22 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplicationTest - No active profile set, falling back to 1 default profile: "default"
+2026-01-26 18:22:22 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplicationTest - Started AIGeneratedTweetToKafkaApplicationTest in 0.292 seconds (process running for 0.769)
+2026-01-26 18:22:22 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - application is starting ...
+2026-01-26 18:22:22 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - keywords: [Java, Microservices, Spring, Kafka, Elasticsearch]

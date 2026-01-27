@@ -1,0 +1,5 @@
+2026-01-26 18:22:41 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 27286 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-26 18:22:41 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-26 18:22:41 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 0.384 seconds (process running for 0.655)
+2026-01-26 18:22:41 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - application is starting ...
+2026-01-26 18:22:41 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - keywords: [Java, Microservices, Spring, Kafka, Elasticsearch]
