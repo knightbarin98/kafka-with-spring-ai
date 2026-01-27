@@ -7,18 +7,22 @@ import com.mrbarin.ai.generated.tweet.to.kafka.service.exception.AIGeneratedTwee
 import com.mrbarin.ai.generated.tweet.to.kafka.service.service.AIService;
 import com.mrbarin.ai.generated.tweet.to.kafka.service.service.openai.model.OpenAIRequest;
 import com.mrbarin.ai.generated.tweet.to.kafka.service.service.openai.model.OpenAIResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.hc.client5.http.classic.methods.HttpPost;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
 import org.apache.hc.client5.http.impl.classic.HttpClients;
 import org.apache.hc.core5.http.HttpHeaders;
 import org.apache.hc.core5.http.io.entity.EntityUtils;
 import org.apache.hc.core5.http.io.entity.StringEntity;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.List;
 
+@Slf4j
 @Service
+@ConditionalOnProperty(name = "ai-generated-tweet-to-kafka-service.ai-service", havingValue = "OpenAI")
 public class OpenAIService implements AIService {
 
   private final AIGeneratedTweetToKafkaServiceConfigData configData;
@@ -32,6 +36,7 @@ public class OpenAIService implements AIService {
 
   @Override
   public String generateTweet() throws AIGeneratedTweetToKafkaServiceException {
+    log.info("Generating tweet using OpenAIService");
     String prompt = configData.getPrompt().replace(configData.getKeywordsPlaceHolder(),
         String.join(",", configData.getStreamingDataKeywords()));
     try(CloseableHttpClient httpClient = HttpClients.createDefault()){
