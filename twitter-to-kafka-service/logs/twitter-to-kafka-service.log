@@ -424,3 +424,860 @@ com.google.genai.errors.ClientException: 403 . Vertex AI API has not been used i
 
 2026-01-27 01:56:42 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
 2026-01-27 01:56:42 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-27 21:59:10 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 36414 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-27 21:59:10 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-27 21:59:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-27 21:59:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-27 21:59:11 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-27 21:59:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-27 21:59:11 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-27 21:59:11 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 474 ms
+2026-01-27 21:59:11 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIGeneratedTweetToKafkaApplication': Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'AIStreamRunner' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/runner/AIStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.mrbarin.ai.generated.tweet.to.kafka.service.service.AIService' available: expected single matching bean but found 2: openAIJavaClientService,springAIOpenAIService
+2026-01-27 21:59:11 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-27 21:59:11 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-27 21:59:11 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner required a single bean, but 2 were found:
+	- openAIJavaClientService: defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/OpenAIJavaClientService.class]
+	- springAIOpenAIService: defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-6.1-Release-Notes#parameter-name-retention)
+
+
+2026-01-27 22:00:12 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 36444 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-27 22:00:12 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-27 22:00:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-27 22:00:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-27 22:00:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-27 22:00:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-27 22:00:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-27 22:00:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 430 ms
+2026-01-27 22:00:12 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIGeneratedTweetToKafkaApplication': Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'AIStreamRunner' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/runner/AIStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+2026-01-27 22:00:12 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-27 22:00:12 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-27 22:00:12 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIGeneratedTweetToKafkaApplication': Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'AIStreamRunner' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/runner/AIStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.AIGeneratedTweetToKafkaApplication.main(AIGeneratedTweetToKafkaApplication.java:38)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIStreamRunner' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/runner/AIStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 49 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 63 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 76 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 89 common frames omitted
+Caused by: java.lang.IllegalArgumentException: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.util.Assert.hasText(Assert.java:253)
+	at org.springframework.ai.model.openai.autoconfigure.OpenAIAutoConfigurationUtil.resolveConnectionProperties(OpenAIAutoConfigurationUtil.java:58)
+	at org.springframework.ai.model.openai.autoconfigure.OpenAiChatAutoConfiguration.openAiApi(OpenAiChatAutoConfiguration.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172)
+	... 92 common frames omitted
+2026-01-27 22:01:52 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 36466 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-27 22:01:52 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-27 22:01:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-27 22:01:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-27 22:01:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-27 22:01:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-27 22:01:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-27 22:01:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 439 ms
+2026-01-27 22:01:53 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIGeneratedTweetToKafkaApplication': Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'AIStreamRunner' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/runner/AIStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+2026-01-27 22:01:53 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-27 22:01:53 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-27 22:01:53 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIGeneratedTweetToKafkaApplication': Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'AIStreamRunner' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/runner/AIStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.AIGeneratedTweetToKafkaApplication.main(AIGeneratedTweetToKafkaApplication.java:38)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIStreamRunner' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/runner/AIStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 49 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 63 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 76 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 89 common frames omitted
+Caused by: java.lang.IllegalArgumentException: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.util.Assert.hasText(Assert.java:253)
+	at org.springframework.ai.model.openai.autoconfigure.OpenAIAutoConfigurationUtil.resolveConnectionProperties(OpenAIAutoConfigurationUtil.java:58)
+	at org.springframework.ai.model.openai.autoconfigure.OpenAiChatAutoConfiguration.openAiApi(OpenAiChatAutoConfiguration.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172)
+	... 92 common frames omitted
+2026-01-27 22:03:00 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 36473 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-27 22:03:00 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-27 22:03:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-27 22:03:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-27 22:03:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-27 22:03:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-27 22:03:00 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-27 22:03:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 433 ms
+2026-01-27 22:03:00 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIGeneratedTweetToKafkaApplication': Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'AIStreamRunner' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/runner/AIStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+2026-01-27 22:03:00 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-27 22:03:00 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-27 22:03:00 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIGeneratedTweetToKafkaApplication': Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'AIStreamRunner' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/runner/AIStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.AIGeneratedTweetToKafkaApplication.main(AIGeneratedTweetToKafkaApplication.java:38)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIStreamRunner' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/runner/AIStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 49 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 63 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 76 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 89 common frames omitted
+Caused by: java.lang.IllegalArgumentException: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.util.Assert.hasText(Assert.java:253)
+	at org.springframework.ai.model.openai.autoconfigure.OpenAIAutoConfigurationUtil.resolveConnectionProperties(OpenAIAutoConfigurationUtil.java:58)
+	at org.springframework.ai.model.openai.autoconfigure.OpenAiChatAutoConfiguration.openAiApi(OpenAiChatAutoConfiguration.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172)
+	... 92 common frames omitted
+2026-01-27 22:04:02 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 36480 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-27 22:04:02 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-27 22:04:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-27 22:04:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-27 22:04:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-27 22:04:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-27 22:04:02 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-27 22:04:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 437 ms
+2026-01-27 22:04:02 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIGeneratedTweetToKafkaApplication': Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'AIStreamRunner' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/runner/AIStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+2026-01-27 22:04:02 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-27 22:04:02 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-27 22:04:02 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIGeneratedTweetToKafkaApplication': Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'AIStreamRunner' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/runner/AIStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.AIGeneratedTweetToKafkaApplication.main(AIGeneratedTweetToKafkaApplication.java:38)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIStreamRunner' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/runner/AIStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springAIOpenAIService' defined in file [/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes/com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIOpenAIService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'openAIChatClient' defined in class path resource [com/mrbarin/ai/generated/tweet/to/kafka/service/service/springai/SpringAIConfig.class]: Unsatisfied dependency expressed through method 'openAIChatClient' parameter 0: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 49 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'openAiChatModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Unsatisfied dependency expressed through method 'openAiChatModel' parameter 0: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 63 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiApi' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiChatAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 76 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.ai.openai.api.OpenAiApi]: Factory method 'openAiApi' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 89 common frames omitted
+Caused by: java.lang.IllegalArgumentException: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.chat.api-key property.
+	at org.springframework.util.Assert.hasText(Assert.java:253)
+	at org.springframework.ai.model.openai.autoconfigure.OpenAIAutoConfigurationUtil.resolveConnectionProperties(OpenAIAutoConfigurationUtil.java:58)
+	at org.springframework.ai.model.openai.autoconfigure.OpenAiChatAutoConfiguration.openAiApi(OpenAiChatAutoConfiguration.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172)
+	... 92 common frames omitted
+2026-01-27 22:05:01 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 36488 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-27 22:05:01 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-27 22:05:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-27 22:05:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-27 22:05:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-27 22:05:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-27 22:05:01 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-27 22:05:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 452 ms
+2026-01-27 22:05:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-27 22:05:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-27 22:05:02 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 1.084 seconds (process running for 1.365)
+2026-01-27 22:05:02 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Application starting....
+2026-01-27 22:05:02 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - AI Stream Runner init
+2026-01-27 22:05:02 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.s.SpringAIOpenAIService - Converter format: Your response should be in JSON format.
+Do not include any explanations, only provide a RFC8259 compliant JSON response following this format without deviation.
+Do not include markdown code blocks in your response.
+Remove the ```json markdown from the output.
+Here is the JSON Schema instance your output must adhere to:
+```{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "createdAt" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "text" : {
+      "type" : "string"
+    },
+    "user" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer"
+        }
+      },
+      "required" : [ "id" ],
+      "additionalProperties" : false
+    }
+  },
+  "required" : [ "createdAt", "id", "text", "user" ],
+  "additionalProperties" : false
+}```
+
+2026-01-27 22:05:02 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.IllegalStateException: Not all variables were replaced in the template. Missing variable names are: [template].
+	at org.springframework.ai.template.st.StTemplateRenderer.validate(StTemplateRenderer.java:144)
+	at org.springframework.ai.template.st.StTemplateRenderer.apply(StTemplateRenderer.java:110)
+	at org.springframework.ai.chat.prompt.PromptTemplate.render(PromptTemplate.java:142)
+	at org.springframework.ai.chat.prompt.PromptTemplate.create(PromptTemplate.java:199)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.springai.SpringAIOpenAIService.generateTweet(SpringAIOpenAIService.java:41)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 22:05:32 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.s.SpringAIOpenAIService - Converter format: Your response should be in JSON format.
+Do not include any explanations, only provide a RFC8259 compliant JSON response following this format without deviation.
+Do not include markdown code blocks in your response.
+Remove the ```json markdown from the output.
+Here is the JSON Schema instance your output must adhere to:
+```{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "createdAt" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "text" : {
+      "type" : "string"
+    },
+    "user" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer"
+        }
+      },
+      "required" : [ "id" ],
+      "additionalProperties" : false
+    }
+  },
+  "required" : [ "createdAt", "id", "text", "user" ],
+  "additionalProperties" : false
+}```
+
+2026-01-27 22:05:32 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.IllegalStateException: Not all variables were replaced in the template. Missing variable names are: [template].
+	at org.springframework.ai.template.st.StTemplateRenderer.validate(StTemplateRenderer.java:144)
+	at org.springframework.ai.template.st.StTemplateRenderer.apply(StTemplateRenderer.java:110)
+	at org.springframework.ai.chat.prompt.PromptTemplate.render(PromptTemplate.java:142)
+	at org.springframework.ai.chat.prompt.PromptTemplate.create(PromptTemplate.java:199)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.springai.SpringAIOpenAIService.generateTweet(SpringAIOpenAIService.java:41)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 22:06:02 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.s.SpringAIOpenAIService - Converter format: Your response should be in JSON format.
+Do not include any explanations, only provide a RFC8259 compliant JSON response following this format without deviation.
+Do not include markdown code blocks in your response.
+Remove the ```json markdown from the output.
+Here is the JSON Schema instance your output must adhere to:
+```{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "createdAt" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "text" : {
+      "type" : "string"
+    },
+    "user" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer"
+        }
+      },
+      "required" : [ "id" ],
+      "additionalProperties" : false
+    }
+  },
+  "required" : [ "createdAt", "id", "text", "user" ],
+  "additionalProperties" : false
+}```
+
+2026-01-27 22:06:02 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.IllegalStateException: Not all variables were replaced in the template. Missing variable names are: [template].
+	at org.springframework.ai.template.st.StTemplateRenderer.validate(StTemplateRenderer.java:144)
+	at org.springframework.ai.template.st.StTemplateRenderer.apply(StTemplateRenderer.java:110)
+	at org.springframework.ai.chat.prompt.PromptTemplate.render(PromptTemplate.java:142)
+	at org.springframework.ai.chat.prompt.PromptTemplate.create(PromptTemplate.java:199)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.service.springai.SpringAIOpenAIService.generateTweet(SpringAIOpenAIService.java:41)
+	at com.mrbarin.ai.generated.tweet.to.kafka.service.runner.AIStreamRunner.run(AIStreamRunner.java:19)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-27 22:06:11 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-27 22:06:11 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-27 22:06:12 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 36500 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-27 22:06:12 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-27 22:06:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-27 22:06:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-27 22:06:13 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-27 22:06:13 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-27 22:06:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-27 22:06:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 446 ms
+2026-01-27 22:06:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-27 22:06:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-27 22:06:13 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 1.081 seconds (process running for 1.368)
+2026-01-27 22:06:13 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Application starting....
+2026-01-27 22:06:13 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - AI Stream Runner init
+2026-01-27 22:06:13 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.s.SpringAIOpenAIService - Converter format: Your response should be in JSON format.
+Do not include any explanations, only provide a RFC8259 compliant JSON response following this format without deviation.
+Do not include markdown code blocks in your response.
+Remove the ```json markdown from the output.
+Here is the JSON Schema instance your output must adhere to:
+```{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "createdAt" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "text" : {
+      "type" : "string"
+    },
+    "user" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer"
+        }
+      },
+      "required" : [ "id" ],
+      "additionalProperties" : false
+    }
+  },
+  "required" : [ "createdAt", "id", "text", "user" ],
+  "additionalProperties" : false
+}```
+
+2026-01-27 22:06:19 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.s.SpringAIOpenAIService - Model result: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023","id":1234567890,"text":"Exploring the implications of AI in the study of Reimann Manifolds reveals fascinating insights.","user":{"id":9876543210}}
+2026-01-27 22:06:19 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023","id":1234567890,"text":"Exploring the implications of AI in the study of Reimann Manifolds reveals fascinating insights.","user":{"id":9876543210}}
+2026-01-27 22:06:43 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.s.SpringAIOpenAIService - Converter format: Your response should be in JSON format.
+Do not include any explanations, only provide a RFC8259 compliant JSON response following this format without deviation.
+Do not include markdown code blocks in your response.
+Remove the ```json markdown from the output.
+Here is the JSON Schema instance your output must adhere to:
+```{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "createdAt" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "text" : {
+      "type" : "string"
+    },
+    "user" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer"
+        }
+      },
+      "required" : [ "id" ],
+      "additionalProperties" : false
+    }
+  },
+  "required" : [ "createdAt", "id", "text", "user" ],
+  "additionalProperties" : false
+}```
+
+2026-01-27 22:06:45 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.s.SpringAIOpenAIService - Model result: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023","id":1234567890123,"text":"AI and Holonomy Groups play a crucial role in modern physics and mathematics.","user":{"id":9876543210987}}
+2026-01-27 22:06:45 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023","id":1234567890123,"text":"AI and Holonomy Groups play a crucial role in modern physics and mathematics.","user":{"id":9876543210987}}
+2026-01-27 22:07:13 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.s.SpringAIOpenAIService - Converter format: Your response should be in JSON format.
+Do not include any explanations, only provide a RFC8259 compliant JSON response following this format without deviation.
+Do not include markdown code blocks in your response.
+Remove the ```json markdown from the output.
+Here is the JSON Schema instance your output must adhere to:
+```{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "createdAt" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "text" : {
+      "type" : "string"
+    },
+    "user" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer"
+        }
+      },
+      "required" : [ "id" ],
+      "additionalProperties" : false
+    }
+  },
+  "required" : [ "createdAt", "id", "text", "user" ],
+  "additionalProperties" : false
+}```
+
+2026-01-27 22:07:15 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.s.SpringAIOpenAIService - Model result: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023","id":12345678901234,"text":"The study of Holonomy Groups is essential in understanding Reimann Manifolds.","user":{"id":98765432109876}}
+2026-01-27 22:07:15 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023","id":12345678901234,"text":"The study of Holonomy Groups is essential in understanding Reimann Manifolds.","user":{"id":98765432109876}}
+2026-01-27 22:07:19 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-27 22:07:19 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
