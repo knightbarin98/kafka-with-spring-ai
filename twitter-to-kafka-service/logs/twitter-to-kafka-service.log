@@ -1281,3 +1281,54 @@ Here is the JSON Schema instance your output must adhere to:
 2026-01-27 22:07:15 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023","id":12345678901234,"text":"The study of Holonomy Groups is essential in understanding Reimann Manifolds.","user":{"id":98765432109876}}
 2026-01-27 22:07:19 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
 2026-01-27 22:07:19 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-27 22:16:07 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Starting AIGeneratedTweetToKafkaApplication using Java 21.0.10 with PID 36678 (/Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai/ai-generated-tweet-to-kafka-service/target/classes started by mrbarin98 in /Users/mrbarin98/Documents/code/Jaba/kafka-with-spring-ai)
+2026-01-27 22:16:07 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-27 22:16:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-27 22:16:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-27 22:16:07 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-27 22:16:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-27 22:16:07 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-27 22:16:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 488 ms
+2026-01-27 22:16:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-27 22:16:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-27 22:16:08 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Started AIGeneratedTweetToKafkaApplication in 1.131 seconds (process running for 1.42)
+2026-01-27 22:16:08 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - Application starting....
+2026-01-27 22:16:08 [main] INFO  c.m.a.g.t.t.k.s.AIGeneratedTweetToKafkaApplication - AI Stream Runner init
+2026-01-27 22:16:08 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.s.SpringAIDeepSeekService - Converter format: Your response should be in JSON format.
+Do not include any explanations, only provide a RFC8259 compliant JSON response following this format without deviation.
+Do not include markdown code blocks in your response.
+Remove the ```json markdown from the output.
+Here is the JSON Schema instance your output must adhere to:
+```{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "createdAt" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "text" : {
+      "type" : "string"
+    },
+    "user" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer"
+        }
+      },
+      "required" : [ "id" ],
+      "additionalProperties" : false
+    }
+  },
+  "required" : [ "createdAt", "id", "text", "user" ],
+  "additionalProperties" : false
+}```
+
+2026-01-27 22:16:11 [scheduling-1] INFO  c.m.a.g.t.t.k.s.s.s.SpringAIDeepSeekService - Model result from Deepseek: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023","id":1234567890,"text":"AI is revolutionizing the study of Holonomy Groups on Manifolds.","user":{"id":987654321}}
+2026-01-27 22:16:11 [scheduling-1] INFO  c.m.a.g.t.t.k.s.r.AIStreamRunner - AiService: {"createdAt":"Fri Oct 06 14:32:25 UTC 2023","id":1234567890,"text":"AI is revolutionizing the study of Holonomy Groups on Manifolds.","user":{"id":987654321}}
+2026-01-27 22:16:35 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-27 22:16:35 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
