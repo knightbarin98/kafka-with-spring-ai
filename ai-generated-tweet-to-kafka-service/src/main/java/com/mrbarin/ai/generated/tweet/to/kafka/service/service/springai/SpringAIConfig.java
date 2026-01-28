@@ -12,4 +12,9 @@ public class SpringAIConfig {
   ChatClient openAIChatClient(OpenAiChatModel openAiChatModel){
     return ChatClient.builder(openAiChatModel).build();
   }
+
+//  @Bean("ollamaChatClient")
+//  ChatClient ollamaChatClient(OllamaChatModel ollamaChatModel){
+//    return ChatClient.builder(ollamaChatModel).build();
+//  }
 }
